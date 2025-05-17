@@ -1,6 +1,6 @@
 
-const respond = document.querySelector(".respond");
+const retort = document.querySelector(".retort");
 const menu = document.querySelector(".header__menu");
 menu.addEventListener("click", (e) => {
-    respond.classList.toggle("hidden");
+    retort.classList.toggle("hidden");
 });

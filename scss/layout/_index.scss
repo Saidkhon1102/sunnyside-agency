@@ -1,7 +1,7 @@
 .brand {
   height: 600px;
   @include flex();
-  @include respond(sm) {
+  @include retort(sm) {
     @include flex($direction: column);
     height: auto;
   }
@@ -10,10 +10,10 @@
     @include flex($direction: column, $justify: center);
     padding-left: 16.5rem;
     padding-right: 11rem;
-    @include respond(lg) {
+    @include retort(lg) {
       padding-left: 3rem;
     }
-    @include respond(sm) {
+    @include retort(sm) {
       margin-top: 6.4rem;
       margin-bottom: 6.4rem;
       padding-left: 2.4rem;
@@ -28,7 +28,7 @@
     font-size: $font-lg;
     @include size($mw: 450px);
     margin-bottom: 3.2rem;
-    @include respond(sm) {
+    @include retort(sm) {
       margin-bottom: 2.4rem;
       font-size: 3.2rem;
     }
@@ -39,7 +39,7 @@
     font-size: $font-md;
     line-height: 1.666;
     color: $color-gray;
-    @include respond(sm) {
+    @include retort(sm) {
       margin-bottom: 3.2rem;
     }
   }
@@ -52,7 +52,7 @@
     font-size: 1.5rem;
     line-height: 1.66;
     @include flex($direction: column, $align: center);
-    @include respond(sm) {
+    @include retort(sm) {
       @include m-center;
     }
   }
@@ -72,7 +72,7 @@
   }
   &__img {
     width: 50%;
-    @include respond(sm) {
+    @include retort(sm) {
       width: 100%;
     }
   }

@@ -41,7 +41,7 @@ h1 {
   margin-right: auto;
   padding-left: 4rem;
   padding-right: 4rem;
-  @include respond(sm) {
+  @include retort(sm) {
     padding-left: 2rem;
     padding-right: 2rem;
   }
@@ -54,7 +54,7 @@ h1 {
 }
 .order1 {
   order: 1;
-  @include respond(sm) {
+  @include retort(sm) {
     order: -1;
   }
 }
