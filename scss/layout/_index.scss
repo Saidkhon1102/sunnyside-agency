@@ -1,0 +1,80 @@
+.brand {
+  height: 600px;
+  @include flex();
+  @include respond(sm) {
+    @include flex($direction: column);
+    height: auto;
+  }
+  &__about {
+    width: 50%;
+    @include flex($direction: column, $justify: center);
+    padding-left: 16.5rem;
+    padding-right: 11rem;
+    @include respond(lg) {
+      padding-left: 3rem;
+    }
+    @include respond(sm) {
+      margin-top: 6.4rem;
+      margin-bottom: 6.4rem;
+      padding-left: 2.4rem;
+      padding-right: 2.4rem;
+      width: 100%;
+      text-align: center;
+    }
+  }
+  &__title {
+    font-family: $font-fraunces;
+    font-weight: 900;
+    font-size: $font-lg;
+    @include size($mw: 450px);
+    margin-bottom: 3.2rem;
+    @include respond(sm) {
+      margin-bottom: 2.4rem;
+      font-size: 3.2rem;
+    }
+  }
+  &__description {
+    @include size($mw: 450px);
+    margin-bottom: $font-lg;
+    font-size: $font-md;
+    line-height: 1.666;
+    color: $color-gray;
+    @include respond(sm) {
+      margin-bottom: 3.2rem;
+    }
+  }
+  &__btn {
+    font-family: $font-fraunces;
+    letter-spacing: 1px;
+    color: $color-primary;
+    font-weight: 900;
+    align-self: flex-start;
+    font-size: 1.5rem;
+    line-height: 1.66;
+    @include flex($direction: column, $align: center);
+    @include respond(sm) {
+      @include m-center;
+    }
+  }
+  &__mark {
+    position: relative;
+    display: inline-block;
+    background-color: #da8a80;
+    width: 127px;
+    height: 10px;
+    border-radius: 2.8rem;
+    bottom: 10px;
+    z-index: -1;
+    transition: 0.5s;
+    &:hover {
+      background-color: #FE7766;
+    }
+  }
+  &__img {
+    width: 50%;
+    @include respond(sm) {
+      width: 100%;
+    }
+  }
+}
+// Youtube Ulugbek Samigjonov SCSS BEMdan foydalanildi
